@@ -1,24 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import './Pages/App.css';
+import Home from './Pages/Home';
+import Clients from './Pages/Clients';
+import Workouts from './Pages/Workouts';
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import Container from '@mui/material/Container';
+import * as React from 'react';
+import AppBar from '@mui/material/AppBar';
+import Toolbar from '@mui/material/Toolbar';
+import Typography from '@mui/material/Typography';
+
+
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container maxWidth="lg">
+      <BrowserRouter>
+        <AppBar position="static" color="default">
+          <Toolbar>
+            <Typography variant="h6">
+              <Link to="/">Home |</Link>{' '}
+              <Link to="/workouts">Workout List |</Link>{' '}
+              <Link to="/clients">Client list</Link>{' '}
+            </Typography>
+          </Toolbar>
+          <Routes>
+            <Route exact path="/" element={<Home />} />
+            <Route path="/workouts" element={<Workouts />} />
+            <Route path="/clients" element={<Clients />} />
+          </Routes>
+        </AppBar>
+
+      </BrowserRouter>
+    </Container>
   );
 }
 
