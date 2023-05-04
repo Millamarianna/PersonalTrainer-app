@@ -15,7 +15,7 @@ function Clients() {
     useEffect(() => fetchData(), []);
 
     const fetchData = () => {
-        fetch('http://traineeapp.azurewebsites.net/api/customers')
+        fetch('https://traineeapp.azurewebsites.net/api/customers')
             .then(response => response.json())
             .then(data => {
                 console.log(data.content);
