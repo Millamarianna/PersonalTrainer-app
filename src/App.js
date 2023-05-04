@@ -3,6 +3,7 @@ import Home from './Pages/Home';
 import Clients from './Pages/Clients';
 import Workouts from './Pages/Workouts';
 import Calendarpage from './Pages/Calendarpage';
+import Charts from './Pages/Charts';
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Container from '@mui/material/Container';
 import * as React from 'react';
@@ -23,8 +24,8 @@ function App() {
               <Link to="/">Home |</Link>{' '}
               <Link to="/workouts">Workout List |</Link>{' '}
               <Link to="/calendarpage">Workout calendar |</Link>{' '}
-              <Link to="/clients">Client list</Link>{' '}
-              
+              <Link to="/clients">Client list |</Link>{' '}
+              <Link to="/charts">Charts</Link>{' '}
             </Typography>
           </Toolbar>
           <Routes>
@@ -32,6 +33,7 @@ function App() {
             <Route path="/workouts" element={<Workouts />} />
             <Route path="/clients" element={<Clients />} />
             <Route path="/calendarpage" element={<Calendarpage />} />
+            <Route path="/charts" element={<Charts />} />
           </Routes>
         </AppBar>
 
