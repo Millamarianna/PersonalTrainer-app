@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/PTapp/static/css/main.8c304cc1.css",
-    "main.js": "/PTapp/static/js/main.9fd24020.js",
-    "static/js/787.d5a97497.chunk.js": "/PTapp/static/js/787.d5a97497.chunk.js",
-    "index.html": "/PTapp/index.html",
-    "main.8c304cc1.css.map": "/PTapp/static/css/main.8c304cc1.css.map",
-    "main.9fd24020.js.map": "/PTapp/static/js/main.9fd24020.js.map",
-    "787.d5a97497.chunk.js.map": "/PTapp/static/js/787.d5a97497.chunk.js.map"
+    "main.css": "/PersonalTrainer-app/static/css/main.8c304cc1.css",
+    "main.js": "/PersonalTrainer-app/static/js/main.9fd068af.js",
+    "static/js/787.d5a97497.chunk.js": "/PersonalTrainer-app/static/js/787.d5a97497.chunk.js",
+    "index.html": "/PersonalTrainer-app/index.html",
+    "main.8c304cc1.css.map": "/PersonalTrainer-app/static/css/main.8c304cc1.css.map",
+    "main.9fd068af.js.map": "/PersonalTrainer-app/static/js/main.9fd068af.js.map",
+    "787.d5a97497.chunk.js.map": "/PersonalTrainer-app/static/js/787.d5a97497.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8c304cc1.css",
-    "static/js/main.9fd24020.js"
+    "static/js/main.9fd068af.js"
   ]
 }
